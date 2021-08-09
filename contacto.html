@@ -1,77 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoN1</title>
+    <title>Contactanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href = "https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100 & display = swap" rel = "hoja de estilo">
-	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
-	
+    <link href="https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100 & display = swap"
+        rel="hoja de estilo">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <meta name="description" content="La Mejor Hamburgueseria">
+    <meta name="keywords"
+        content="hamburguesa,coca-cola,bacon,buenos aires,fanta,prite,papas fritas,pancho,hotdog,agua">
+    <!-- protocolo open graph -->
+    <meta property="og:title" content="Santo Pecado">
+    <meta property="og:image" content="img/logo_color.png">
+    <meta property="og:author" content="Belén Venturini">
+    <meta property="og:description" content="La Mejor Hamburgueseria">
 </head>
-<body>   
+
+
+<body>
     <header>
-    
-    
         <nav class="navbar">
-            
+
             <a href="index.html">
-                <img class="logo" src="img/burger2.jpg" alt="">
+                <img class="logo" src="img/logo_color.png" alt="">
             </a>
-            
-            <ul class="ulBarra"> 
+
+            <ul class="ulBarra">
                 <li> <a href="index.html"> HOME </a> </li>
                 <li> <a href="menu.html"> MENU</a> </li>
                 <li> <a href="locales.html"> LOCALES </a> </li>
                 <li> <a href="contacto.html"> CONTACTO</a> </li>
-                <li> <a href="pedi-online.html"> PEDI ONLINE </a> </li>
-            </ul>  
+
+            </ul>
+
         </nav>
-    
     </header>
 
-<div id="contactoPortada">
-</div>
+    <div class="contactoPortada">
+    </div>
 
-<div id="cajaContacto">
-    <h1 id="tituloContacto">CONTACTO</h1>
-    <br><br>
 
-<main>
-    <h1> ¿QUERÉS CONTACTARNOS?</h1>
-    <label for="nombre_apellido"> Envianos un mensaje si tenes preguntas o comentarios</label> <br><br><br>
-        <input type="text" name="nombre" id="nombre" placeholder=NOMBRE>
-        <br><br>
-
-        <label for="E MAIL"></label> <br>
-        <input type="text" name="E MAIL" id="E MAIL" placeholder="tucorreo@gmail.com">
-        <br><br>
+    <div class="cajaContacto">
     
 
-    <fieldset>
-            
-            <textarea name="contanos" id="contanos" cols="150" rows="10" placeholder="DEJANOS TU MENSAJE O CONSULTA AQUÍ"></textarea>
-    </fieldset><br><br> 
+        <div class="container">
+        <h1>¿QUERES COMUNICARTE CON NOSOTROS?</h1>
+        <h6>Dejanos tu comentario, o envianos un email </h6>
+            <form action="">
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" class="form-control" placeholder="NOMBRE" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" class="form-control" placeholder="tuemail@gmail.com" name="email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="contanos" id="contanos" cols="150" rows="10"
+                        placeholder="DEJANOS TU MENSAJE O CONSULTA AQUÍ"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
 
-    <input type="submit" value="ENVIAR">    
 
-</main>
-
-
-</div>
+    </div>
 
 
 
 
-<footer id="footer">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quis, id. Aut quaerat provident voluptatem consequatur dignissimos 
-        sapiente sit omnis eos rerum, nihil, minima harum quidem quisquam ut 
-        voluptas nobis quis?</p>
-        <a href="mailto:todastusprendas@ttp.com.ar">todastusprendas@ttp.com.ar</a>
+    <footer class="footer">
+        <div class="Uno">
+            <div class="letraFooter">
+                <p>CONTACTO </p>
+                <p>info@santopecado.com</p>
+            </div>
+            <div class="letraFooter">
+                <p>TELEFONO</p>
+                <p>0800-1122</p>
+            </div>
+        </div>
+
+        <div class="Dos">
+            <div class="letraFooter">
+                <p>PALERMO </p>
+                <p>Armenia 1900</p>
+
+            </div>
+            <div class="letraFooter">
+                <p>CABALLITO</p>
+                <p>Av. Rivadavia 4950</p>
+            </div>
+        </div>
+
+        <div class="Tres">
+            <img class="imgIconos" src="img/iconos.png" alt="">
+        </div>
     </footer>
 
 
 </body>
+
 </html>

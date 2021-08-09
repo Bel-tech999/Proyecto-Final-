@@ -1,90 +1,140 @@
-p{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
+p {
+	font-family: $tipogeneral;
 
 }
 
-#menuPortada{
-    height: 300px;
-    width: 1650px;
-    background-color:black;
-}
-
-
-
-
-
-#grilla{
+.grilla {
 	display: grid;
-	grid-template-columns: auto 824px 824px  auto;
-    grid-template-rows: 400px  400px  400px  400px;
-	grid-template-areas:". imagen1 imagen2 ."
-	                    ". imagen3 imagen4 ."
-						". imagen5 imagen6 ."
-						". imagen7 imagen8 .";
-	height: 100em;                     
+
+	grid-template-columns: auto 824px 824px auto;
+	grid-template-rows: 400px 400px 400px 400px;
+	grid-template-areas: ". imagen1 imagen2 ."
+		". imagen3 imagen4 ."
+		". imagen5 imagen6 ."
+		". imagen7 imagen8 .";
+	font-size: 21px;
+
+
+	@media only screen and (max-width: 576px) {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	@media only screen and (min-width: 577px) and (max-width:960px) {
+		display: flex;
+		flex-direction: column;
+
+	}
+
 }
 
 
-img{
-    max-width: 100%;
-    height: 100%;
+
+img {
+	max-width: 100%;
+	height: 100%;
 }
 
-#imagenUno{
-	grid-area: imagen1; 
-    background-color:  #BC2710;
-    display: flex;
-    align-items: center;   
+.imagenUno,
+.imagenCuatro,
+.imagenCinco,
+.imagenOcho {
+	background-color: $colorpag;
 }
 
-#imagenDos{
+.imagenDos,
+.imagenTres,
+.imagenSeis,
+.imagenSiete {
+	background-color: $colorpagb;
+}
+
+.imagenUno,
+.imagenDos,
+.imagenTres,
+.imagenCuatro,
+.imagenCinco,
+.imagenSeis,
+.imagenSiete,
+.imagenOcho {
+	display: flex;
+	align-items: center;
+
+	@media only screen and (max-width: 576px) {
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	@media only screen and (min-width: 577px) and (max-width:960px) {
+		width: 100%;
+		height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+
+
+	img {
+		@media only screen and (max-width: 576px) {
+			height: 230px;
+			width: 220px;
+			justify-content: center;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			height: 330px;
+			width: 320px;
+			justify-content: center;
+		}
+	}
+
+	p {
+		@media only screen and (max-width: 576px) {
+			font-size: 12px;
+			font-weight: bolder;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			font-size: 15px;
+			font-weight: bolder;
+		}
+	}
+}
+
+.imagenUno {
+	grid-area: imagen1;
+}
+
+.imagenDos {
 	grid-area: imagen2;
-	display: flex;
-	align-items: center;
-	background-color: #51C8B7;
 }
 
-#imagenTres{
+.imagenTres {
 	grid-area: imagen3;
-	display: flex;
-	align-items: center;
-	background-color: #51C8B7;	
 }
 
-#imagenCuatro{
+.imagenCuatro {
 	grid-area: imagen4;
-	background-color:  #BC2710;
-	display: flex;
-	align-items: center;
 }
 
-#imagenCinco{
+.imagenCinco {
 	grid-area: imagen5;
-	display: flex;
-	align-items: center;
-	background-color: #51C8B7;	
 }
 
-#imagenSeis{
+.imagenSeis {
 	grid-area: imagen6;
-	background-color:  #BC2710;
-	display: flex;
-	align-items: center;
 }
 
-#imagenSiete{
+.imagenSiete {
 	grid-area: imagen7;
-	display: flex;
-	align-items: center;
-	background-color: #51C8B7;	
 }
 
-#imagenOcho{
+.imagenOcho {
 	grid-area: imagen8;
-	background-color:  #BC2710;
-	display: flex;
-	align-items: center;
 }

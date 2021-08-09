@@ -1,20 +1,172 @@
-section{
-	
-	width: 1650px;
-	height: 800px;
-	background-color: black ;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
+.sectionUno {
+
+	width: 100%;
+	height: 900px;
+	background-color: $colorpagb;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center
+	align-items: center;
+
+	@media only screen and (max-width: 576px) {
+		width: 100%;
+		height: 600px;
+	}
 
 }
 
-h3 {
-    align-items: center;
-    background-color: aqua;
-    color: white;
+.cajaLT,
+.texL,
+.cajaL,
+.cajaTD {
+	align-items: center;
+	justify-content: center;
+}
+
+.cajaLT {
+	background-color: $colorpagb;
+	height: 200px;
+	display: flex;
+	text-align: center;
+
+
+	.texL {
+		color: $colortextoc;
+		font-size: 20px;
+		font-family: $tipogeneral;
+
+		@media only screen and (max-width: 576px) {
+			width: 100%;
+			font-size: 15px;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			width: 100%;
+			font-size: 20px;
+		}
+	}
+}
+
+
+.cajaL {
+	height: 620px;
+	width: 990px;
+	background-color: $colorpag;
+	display: flex;
+
+	@media only screen and (max-width: 576px) {
+		width: 100%;
+		height: 380px;
+	}
+
+	@media only screen and (min-width: 577px) and (max-width:960px) {
+		width: 100%;
+		height: 620px;
+	}
+
+	.imgLocal {
+		height: 600px;
+		width: 970px;
+
+		@media only screen and (max-width: 576px) {
+			width: 100%;
+			height: 290px;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			width: 100%;
+			height: 500px;
+		}
+	}
+}
+
+.separador,
+.cajaTD,
+.texDos,
+.mapa {
+	background-color: $colorpag;
+}
+
+
+.separador {
+	height: 15px;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.cajaTD {
+	width: 100%;
+	margin-bottom: 60px;
+	display: flex;
+	height: 45px;
+
+	.texDos {
+
+		color: $colortextoc;
+		height: 100%;
+		width: 500px;
+		font-family: $tipogeneral;
+		font-size: 40px;
+
+		@media only screen and (max-width: 576px) {
+			font-size: 28px;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			font-size: 35px;
+		}
+	}
+}
+
+.sectionDos {
+	width: 100%;
+	height: 950px;
+	background-color: $colorpagb;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: 576px) {
+		width: 100%;
+		height: 570px;
+	}
+
+	@media only screen and (min-width: 577px) and (max-width:960px) {
+		width: 100%;
+		height: 750px;
+	}
+
+	.mapa {
+		display: flex;
+		width: 820px;
+		height: 570px;
+		align-items: center;
+		justify-content: space-around;
+
+		@media only screen and (max-width: 576px) {
+			width: 100%;
+			height: 350px;
+		}
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
+			width: 100%;
+			height: 450px;
+		}
+
+		.mapaUno {
+			height: 560px;
+			width: 810px;
+
+			@media only screen and (max-width: 576px) {
+				width: 100%;
+				height: 320px;
+			}
+
+			@media only screen and (min-width: 577px) and (max-width:960px) {
+				width: 100%;
+				height: 400px;
+			}
+		}
+	}
 }
