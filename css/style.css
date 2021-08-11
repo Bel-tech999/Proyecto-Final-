@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-  color: #51C8B7;
+  color: black;
   cursor: pointer;
 }
 
@@ -211,6 +211,14 @@ h1 {
     align-items: center;
   }
 }
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .bloqueTres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .cajaUno,
 .cajaDos,
@@ -231,6 +239,17 @@ h1 {
     width: 100%;
   }
 }
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .cajaUno,
+.cajaDos,
+.cajaTres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 
 .c1,
 .c2,
@@ -238,22 +257,77 @@ h1 {
   width: 350px;
   height: 500px;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background-color: darkgreen;
+  padding: 10px;
+  margin: 10px;
+  gap: 15px;
+  background-color: #E8E1DE;
 }
-.c1 .img,
-.c2 .img,
-.c3 .img {
-  height: 500px;
-  width: 50%;
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .c1,
+.c2,
+.c3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+  }
 }
-@media only screen and (max-width: 576px) {
-  .c1 .img,
-.c2 .img,
-.c3 .img {
-    width: 90%;
-    margin-left: none;
+.c1 .c1img,
+.c1 .c2img,
+.c1 .c3img,
+.c2 .c1img,
+.c2 .c2img,
+.c2 .c3img,
+.c3 .c1img,
+.c3 .c2img,
+.c3 .c3img {
+  background-size: cover;
+  background-position: center;
+  height: 85%;
+  width: 85%;
+}
+.c1 .c1img,
+.c2 .c1img,
+.c3 .c1img {
+  background-image: url(../../img/hamburger.jpg);
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .c1 .c1img,
+.c2 .c1img,
+.c3 .c1img {
+    height: 85%;
+    width: 80%;
+  }
+}
+.c1 .c2img,
+.c2 .c2img,
+.c3 .c2img {
+  background-image: url(../../img/hotd.jpg);
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .c1 .c2img,
+.c2 .c2img,
+.c3 .c2img {
+    height: 85%;
+    width: 80%;
+  }
+}
+.c1 .c3img,
+.c2 .c3img,
+.c3 .c3img {
+  background-image: url(../../img/coke.jpg);
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .c1 .c3img,
+.c2 .c3img,
+.c3 .c3img {
+    height: 85%;
+    width: 80%;
   }
 }
 .c1 h2,
@@ -264,7 +338,7 @@ h1 {
   font-size: 30px;
   color: #BC2710;
   font-family: "Montserrat", sans-serif;
-  background-color: chartreuse;
+  background-color: #E8E1DE;
 }
 @media only screen and (max-width: 576px) {
   .c1 h2,
@@ -272,7 +346,7 @@ h1 {
 .c3 h2 {
     flex-direction: column;
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 .c1 h4,
@@ -281,13 +355,13 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 20px;
-  background-color: crimson;
+  background-color: #E8E1DE;
 }
 @media only screen and (max-width: 576px) {
   .c1 h4,
 .c2 h4,
 .c3 h4 {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 .c1 .tex,
@@ -297,13 +371,20 @@ h1 {
   margin-bottom: 0px;
   color: black;
   font-size: 18px;
-  background-color: darkgreen;
+  background-color: #E8E1DE;
 }
 @media only screen and (max-width: 576px) {
   .c1 .tex,
 .c2 .tex,
 .c3 .tex {
-    font-size: 15px;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .c1 .tex,
+.c2 .tex,
+.c3 .tex {
+    font-size: 18px;
   }
 }
 .c1 h2,
@@ -338,9 +419,9 @@ h1 {
 @media only screen and (min-width: 577px) and (max-width: 960px) {
   .footer {
     width: 100%;
-    height: 200px;
+    height: 110px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 }
@@ -395,7 +476,7 @@ p {
 
 .grilla {
   display: grid;
-  grid-template-columns: auto 824px 824px auto;
+  grid-template-columns: auto 825px 825px auto;
   grid-template-rows: 400px 400px 400px 400px;
   grid-template-areas: ". imagen1 imagen2 ." ". imagen3 imagen4 ." ". imagen5 imagen6 ." ". imagen7 imagen8 .";
   font-size: 21px;
@@ -414,8 +495,15 @@ p {
     width: 100%;
   }
 }
-
-img {
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: auto 50% 50% auto;
+    grid-template-rows: 400px 400px 400px 400px;
+    width: 100%;
+  }
+}
+.grilla img {
   max-width: 100%;
   height: 100%;
 }
@@ -482,20 +570,6 @@ img {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 961px) and (max-width: 2560px) {
-  .imagenUno,
-.imagenDos,
-.imagenTres,
-.imagenCuatro,
-.imagenCinco,
-.imagenSeis,
-.imagenSiete,
-.imagenOcho {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 576px) {
   .imagenUno img,
 .imagenDos img,
@@ -524,6 +598,19 @@ img {
     justify-content: center;
   }
 }
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .imagenUno img,
+.imagenDos img,
+.imagenTres img,
+.imagenCuatro img,
+.imagenCinco img,
+.imagenSeis img,
+.imagenSiete img,
+.imagenOcho img {
+    height: 350px;
+    width: 315px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .imagenUno .panchito,
 .imagenDos .panchito,
@@ -550,6 +637,19 @@ img {
     width: 300px;
   }
 }
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .imagenUno .panchito,
+.imagenDos .panchito,
+.imagenTres .panchito,
+.imagenCuatro .panchito,
+.imagenCinco .panchito,
+.imagenSeis .panchito,
+.imagenSiete .panchito,
+.imagenOcho .panchito {
+    height: 230px;
+    width: 340px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .imagenUno p,
 .imagenDos p,
@@ -573,6 +673,19 @@ img {
 .imagenSiete p,
 .imagenOcho p {
     font-size: 15px;
+    font-weight: bolder;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .imagenUno p,
+.imagenDos p,
+.imagenTres p,
+.imagenCuatro p,
+.imagenCinco p,
+.imagenSeis p,
+.imagenSiete p,
+.imagenOcho p {
+    font-size: 14px;
     font-weight: bolder;
   }
 }
@@ -787,11 +900,10 @@ img {
 }
 
 .menuPortada {
-  height: 300px;
+  height: 200px;
   width: 1650px;
-  background-color: #BC2710;
+  background-color: burlywood;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -804,45 +916,79 @@ img {
 @media only screen and (min-width: 577px) and (max-width: 960px) {
   .menuPortada {
     width: 100%;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .menuPortada {
+    width: 100%;
     height: 250px;
   }
 }
 .menuPortada .menuImg {
   background-color: #51C8B7;
-  width: 350px;
-  height: 170px;
+  width: 420px;
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 @media only screen and (max-width: 576px) {
   .menuPortada .menuImg {
-    width: 50%;
-    height: 90px;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 960px) {
-  .menuPortada .menuImg {
-    width: 50%;
+    width: 60%;
     height: 100px;
   }
 }
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+  .menuPortada .menuImg {
+    width: 30%;
+    height: 85px;
+  }
+}
 .menuPortada .bebidas {
-  height: 130px;
-  width: 260px;
-  margin-bottom: 10px;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 35px;
 }
 @media only screen and (max-width: 576px) {
   .menuPortada .bebidas {
-    margin-top: 10px;
+    margin-top: 40px;
+    font-size: 15px;
     width: 90%;
-    height: 60px;
+    height: 70px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 960px) {
   .menuPortada .bebidas {
+    align-items: center;
     width: 90px;
-    height: 70px;
+    font-size: 20px;
+    margin-left: 65px;
+  }
+}
+.menuPortada .burgers {
+  width: 100%;
+  font-size: 30px;
+  margin-left: 35px;
+}
+@media only screen and (max-width: 576px) {
+  .menuPortada .burgers {
+    margin-top: 30px;
+    margin-left: 55px;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+  .menuPortada .burgers {
+    align-items: center;
+    font-size: 27px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 2560px) {
+  .menuPortada .burgers {
+    align-items: center;
+    font-size: 28px;
+    margin-left: 130px;
   }
 }
 

@@ -1,51 +1,92 @@
-.menuPortada{
-    height: 300px;
+.menuPortada {
+    height: 200px;
     width: 1650px;
-    background-color:$colorpag;
+    background-color: burlywood;
     display: flex;
-    flex-direction: row;
-	align-items: center;
-	justify-content: center;
-    @media only screen and (max-width: 576px){
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 576px) {
         width: 100%;
         height: 200px;
 
     }
-    @media only screen and (min-width: 577px) and (max-width:960px){
+
+    @media only screen and (min-width: 577px) and (max-width:960px) {
+        width: 100%;
+        height: 100px;
+    }
+
+    @media only screen and (min-width: 961px) and (max-width:2560px) {
         width: 100%;
         height: 250px;
     }
 
     .menuImg {
         background-color: $colorpagb;
-        width: 350px;
-        height: 170px;
+        width: 420px;
+        height: 100px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        @media only screen and (max-width: 576px){
-            width: 50%;
-            height: 90px;
-        }
-        @media only screen and (min-width: 577px) and (max-width:960px){
-            width: 50%;
+
+        @media only screen and (max-width: 576px) {
+            width: 60%;
             height: 100px;
+        }
+
+        @media only screen and (min-width: 577px) and (max-width:960px) {
+            width: 30%;
+            height: 85px;
         }
     }
 
 
-    .bebidas{
-        height: 130px;
-        width: 260px;
-        margin-bottom: 10px;
-        @media only screen and (max-width: 576px){
-            margin-top: 10px;
+    .bebidas {
+
+        width: 100%;
+        font-size: 30px;
+        margin-left: 35px;
+
+        @media only screen and (max-width: 576px) {
+            margin-top: 40px;
+            font-size: 15px;
             width: 90%;
-            height: 60px;
+            height: 70px;
         }
-        @media only screen and (min-width: 577px) and (max-width:960px){
+
+        @media only screen and (min-width: 577px) and (max-width:960px) {
+            align-items: center;
             width: 90px;
-            height: 70px ;
+            font-size: 20px;
+            margin-left: 65px;
+
+        }
+    }
+
+    .burgers {
+        width: 100%;
+        font-size: 30px;
+        margin-left: 35px;
+
+        @media only screen and (max-width: 576px) {
+            margin-top: 30px;
+            margin-left: 55px;
+            font-size: 25px;
+
+
+        }
+
+        @media only screen and (min-width: 577px) and (max-width:960px) {
+            align-items: center;
+            font-size: 27px;
+            margin-left: 40px;
+
+        }
+
+        @media only screen and (min-width: 961px) and (max-width:2560px) {
+            align-items: center;
+            font-size: 28px;
+            margin-left: 130px;
         }
     }
 }
@@ -54,23 +95,27 @@
 
 
 
-.contactoPortada{
-	height: 150px;
+.contactoPortada {
+    height: 150px;
     width: 100%;
-	background-color: $colorpag;
-	opacity: 0.9;
-    margin-bottom: 0px; margin-left: 0px; width: 1650px;
+    background-color: $colorpag;
+    opacity: 0.9;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 1650px;
 
-    @media only screen and (max-width: 576px){
+    @media only screen and (max-width: 576px) {
         width: 100%;
         height: 60px;
     }
-    @media only screen and (min-width: 577px) and (max-width:960px){
+
+    @media only screen and (min-width: 577px) and (max-width:960px) {
         width: 100%;
         height: 90px;
-        
+
     }
-    @media only screen and (min-width: 961px) and (max-width:2560px){
+
+    @media only screen and (min-width: 961px) and (max-width:2560px) {
         width: 100%;
         height: 150px;
     }
@@ -78,18 +123,16 @@
 
 
 
-.cajaContacto{
-	height: 600px;
-	background-color: $colorpagb;
-	margin-top: 0px;
+.cajaContacto {
+    height: 600px;
+    background-color: $colorpagb;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cajaContactob{
+
+.cajaContactob {
     height: 500px;
 }
-
-
-

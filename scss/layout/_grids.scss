@@ -6,7 +6,7 @@ p {
 .grilla {
 	display: grid;
 
-	grid-template-columns: auto 824px 824px auto;
+	grid-template-columns: auto 825px 825px auto;
 	grid-template-rows: 400px 400px 400px 400px;
 	grid-template-areas: ". imagen1 imagen2 ."
 		". imagen3 imagen4 ."
@@ -28,21 +28,29 @@ p {
 
 	}
 
-	
+	@media only screen and (min-width: 961px) and (max-width:2560px) {
+		display: grid;
+		grid-template-columns: auto 50% 50% auto;
+		grid-template-rows: 400px 400px 400px 400px;
+		width: 100%;
+	}
+
+	img {
+		max-width: 100%;
+		height: 100%;
+	}
 
 }
 
 
 
-img {
-	max-width: 100%;
-	height: 100%;
-}
 
-.panchito{
-	width: 320px; 
+.panchito {
+	width: 320px;
 	height: 220px;
 }
+
+
 
 .imagenUno,
 .imagenCuatro,
@@ -85,11 +93,8 @@ img {
 		flex-direction: column;
 		justify-content: center;
 	}
-	@media only screen and (min-width: 961px) and (max-width:2560px){
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-	}
+
+
 
 
 	img {
@@ -104,16 +109,28 @@ img {
 			width: 320px;
 			justify-content: center;
 		}
+
+		@media only screen and (min-width: 961px) and (max-width:2560px) {
+			height: 350px;
+			width: 315px;
+		}
 	}
 
-	.panchito{
-		@media only screen and (max-width: 576px){
+
+	.panchito {
+		@media only screen and (max-width: 576px) {
 			height: 140px;
 			width: 200px;
 		}
-		@media only screen and (min-width: 577px) and (max-width:960px){
+
+		@media only screen and (min-width: 577px) and (max-width:960px) {
 			height: 210px;
 			width: 300px;
+		}
+
+		@media only screen and (min-width: 961px) and (max-width:2560px) {
+			height: 230px;
+			width: 340px;
 		}
 	}
 
@@ -125,6 +142,11 @@ img {
 
 		@media only screen and (min-width: 577px) and (max-width:960px) {
 			font-size: 15px;
+			font-weight: bolder;
+		}
+
+		@media only screen and (min-width: 961px) and (max-width:2560px) {
+			font-size: 14px;
 			font-weight: bolder;
 		}
 	}
